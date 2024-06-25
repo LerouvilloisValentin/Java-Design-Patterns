@@ -13,7 +13,7 @@ public class TestComposite {
 		
 		Service javaDev = new Service("Java Dev");
 		Service bigData = new Service("Big Data");
-		Service dsin = new Service("DSIN");
+		Service dsin = new Service("DSIN",directeur,architecte);
 		
 		
 

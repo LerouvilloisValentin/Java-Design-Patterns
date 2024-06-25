@@ -1,69 +1,59 @@
 package fr.diginamic.builder;
 
+import java.util.List;
+
 public class Produit {
 	protected String nom;
 	protected String grade;
 	protected Catégorie catégorie;
-	protected Additif Additif;
 	protected Marque marque;
-	protected Ingredient ingredient;
-	protected Allergene allergene;
-
-	
+	protected List<Additif> Additifs;
+	protected List<Ingredient> ingredients;
+	protected List<Allergene> allergenes;
 	public String getNom() {
 		return nom;
 	}
-
 	public String getGrade() {
 		return grade;
 	}
-
 	public Catégorie getCatégorie() {
 		return catégorie;
 	}
-
-	public Additif getAdditif() {
-		return Additif;
-	}
-
 	public Marque getMarque() {
 		return marque;
 	}
-
-	public Ingredient getIngredient() {
-		return ingredient;
+	public List<Additif> getAdditifs() {
+		return Additifs;
 	}
-
-	public Allergene getAllergene() {
-		return allergene;
+	public List<Ingredient> getIngredients() {
+		return ingredients;
 	}
-
+	public List<Allergene> getAllergenes() {
+		return allergenes;
+	}
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
-
 	public void setGrade(String grade) {
 		this.grade = grade;
 	}
-
 	public void setCatégorie(Catégorie catégorie) {
 		this.catégorie = catégorie;
 	}
-
-	public void setAdditif(Additif additif) {
-		Additif = additif;
-	}
-
 	public void setMarque(Marque marque) {
 		this.marque = marque;
 	}
-
-	public void setIngredient(Ingredient ingredient) {
-		this.ingredient = ingredient;
+	public void setAdditifs(List<Additif> additifs) {
+		Additifs = additifs;
+	}
+	public void setIngredients(List<Ingredient> ingredients) {
+		this.ingredients = ingredients;
+	}
+	public void setAllergenes(List<Allergene> allergenes) {
+		this.allergenes = allergenes;
 	}
 
-	public void setAllergene(Allergene allergene) {
-		this.allergene = allergene;
-	}
+	
+
 
 }
